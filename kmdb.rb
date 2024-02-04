@@ -58,6 +58,20 @@ puts new_movie3.inspect
 
 puts "There are #{Movie.all.count} movies"
 
+new_studio = Studio.new
+new_studio ["name"] = "Warner Bros."
+new_studio.save
+puts new_studio.inspect
+
+puts "There are #{Studio.all.count} studios"
+
+new_actor1 = Actor.new
+new_actor1 ["name"] = "Christian Bale"
+new_actor1.save
+puts new_actor1.inspect
+
+puts "There are #{Studio.all.count} actors"
+
 # Submission
 # 
 # - "Use this template" to create a brand-new "hw2" repository in your
