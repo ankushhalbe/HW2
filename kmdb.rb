@@ -30,6 +30,34 @@
 # - Query the data and loop through the results to display output similar to the
 #   sample "report" below. (10 points)
 
+Studio.destroy_all
+Movie.destroy_all
+Actor.destroy_all
+Role.destroy_all
+
+new_movie1 = Movie.new
+new_movie1 ["title"] = "Batman Begins"
+new_movie1 ["year_released"] = 2005
+new_movie1 ["rated"] = "PG-13"
+new_movie1.save
+puts new_movie1.inspect
+
+new_movie2 = Movie.new
+new_movie2 ["title"] = "The Dark Knight"
+new_movie2 ["year_released"] = 2008
+new_movie2 ["rated"] = "PG-13"
+new_movie2.save
+puts new_movie2.inspect
+
+new_movie3 = Movie.new
+new_movie3 ["title"] = "The Dark Knight Rises"
+new_movie3 ["year_released"] = 2012
+new_movie3 ["rated"] = "PG-13"
+new_movie3.save
+puts new_movie3.inspect
+
+puts "There are #{Movie.all.count} movies"
+
 # Submission
 # 
 # - "Use this template" to create a brand-new "hw2" repository in your
