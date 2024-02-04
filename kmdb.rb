@@ -49,7 +49,7 @@ new_movie1 = Movie.new
 new_movie1 ["title"] = "Batman Begins"
 new_movie1 ["year_released"] = 2005
 new_movie1 ["rated"] = "PG-13"
-new_movie1 ["Studio_id"] = Studio1 ["id"]
+#new_movie1 ["Studio_id"] = Studio1 ["id"]
 new_movie1.save
 puts new_movie1.inspect
 
